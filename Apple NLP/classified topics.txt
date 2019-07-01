@@ -1,0 +1,298 @@
+b'Finally, I can use my iPhone to ride the NYC subway'
+[('unlimited', 0.30797120928764343), ('shipped', 0.3063090145587921), ('google', 0.3016769289970398)]
+
+b'Issue 677: Apples Newest Innovation is the iPod; After 15 Years, the Pirate Bay Still Cant Be Killed'
+[('deal', 0.22201763093471527), ('shipped', 0.19163663685321808), ('facebook', 0.1565771847963333)]
+
+b'Raise, 7% Off Uber Gift Cards Today'
+[('deal', 0.3447170555591583), ('shipped', 0.28302332758903503), ('facebook', 0.17887654900550842)]
+
+b'Deal: The Apple iPhone SE is free at AT'
+[('deal', 0.38647550344467163), ('shipped', 0.32581549882888794), ('google', 0.23311357200145721)]
+
+b"This 14-year-old boy is missing from Trafford - police are becoming 'increasingly concerned'"
+[('shipped', 0.2977237105369568), ('amazon', 0.28950798511505127), ('deal', 0.27816492319107056)]
+
+b'Apple to Limit Third-Party Tracking in Kids Apps [Report] - iClarified'
+[('deal', 0.31739506125450134), ('google', 0.2924715280532837), ('shipped', 0.26443541049957275)]
+
+b'5 SA Hip-Hop Artists Who Crossed Over'
+[('facebook', 0.2003241926431656), ('shipped', 0.15937022864818573), ('deal', 0.12377877533435822)]
+
+b'Apple quietly boosts App Store cellular download limit to 200MB'
+[('deal', 0.4301203191280365), ('shipped', 0.3480856716632843), ('google', 0.3397246301174164)]
+
+b"We used our iPhone to ride the New York City subway today  it's the future"
+[('deal', 0.3482331335544586), ('amazon', 0.34711891412734985), ('shipped', 0.31029778718948364)]
+
+b'Why Was Mini USB Deprecated in Favor of Micro USB?'
+[('unlimited', 0.2640781104564667), ('balance', 0.23610854148864746), ('facebook', 0.182204008102417)]
+
+b'Say goodbye to Back to My Mac as of July 1'
+[('deal', 0.27646639943122864), ('balance', 0.26798054575920105), ('google', 0.16227960586547852)]
+
+b'Apple increases cellular download limit for iPhones and iPads'
+[('unlimited', 0.3585580289363861), ('google', 0.34204891324043274), ('shipped', 0.26901763677597046)]
+
+b'Macbook Air 13 Skin template for cutting or machining  Digital Download'
+[('unlimited', 0.3723735809326172), ('google', 0.24663640558719635), ('shipped', 0.24504101276397705)]
+
+b'My predictions for Mondays WWDC keynote'
+[('deal', 0.2984085977077484), ('google', 0.25847065448760986), ('shipped', 0.2311035394668579)]
+
+b'What to expect from Apples WWDC 2019 keynote next week'
+[('deal', 0.28602781891822815), ('shipped', 0.2607411742210388), ('google', 0.231554314494133)]
+
+b'Apple WWDC 2019: What To Expect  Z6 Mag'
+[('unlimited', 0.296519011259079), ('google', 0.23504458367824554), ('shipped', 0.18768449127674103)]
+
+b'Adolescente viola i server di Apple nella speranza di farsi assumere'
+[('unlimited', 0.1998014599084854), ('google', 0.18854624032974243), ('balance', 0.13202251493930817)]
+
+b'Huawei ban : China to hit back at U.S with its own entity list'
+[('facebook', 0.37723907828330994), ('deal', 0.3231869339942932), ('balance', 0.2970828115940094)]
+
+b'Foxconn Moves the Apple Production Line Out of China?'
+[('free', 0.24280357360839844), ('amazon', 0.21871668100357056), ('balance', 0.12913158535957336)]
+
+b'Apple is eliminating Back to My Mac in all macOS versions in July'
+[('free', 0.3735165297985077), ('shipped', 0.3557620942592621), ('amazon', 0.2814309597015381)]
+
+b'Apple Music may replace iTunes at WWDC 2019'
+[('deal', 0.33385276794433594), ('google', 0.2666463851928711), ('shipped', 0.2549036741256714)]
+
+b'Apple might be killing iTunes this year'
+[('shipped', 0.32935214042663574), ('deal', 0.30645620822906494), ('amazon', 0.27976927161216736)]
+
+b'Samsung Galaxy Note 10 may ditch headphone jack and physical buttons: Report'
+[('unlimited', 0.34349554777145386), ('balance', 0.2931074798107147), ('amazon', 0.2125038355588913)]
+
+b'Google Requires Loot Box-Laden Kids Games Disclose the Odds of Winning Digital Goods'
+[('deal', 0.2962329685688019), ('google', 0.2720502018928528), ('shipped', 0.24233996868133545)]
+
+b'Best laptop and tablet deals this weekend: Microsoft Surface, Lenovo Tab, iPad, and others'
+[('unlimited', 0.37671899795532227), ('google', 0.3675791025161743), ('shipped', 0.21988332271575928)]
+
+b"How one little lie started Chef Allen Sims' career"
+[('cashback', 0.2615811824798584), ('facebook', 0.2604769468307495), ('deal', 0.21160189807415009)]
+
+b'Industrials Fall After Mexico Tariff Measures -- Industrials Roundup'
+[('cashback', 0.19528762996196747), ('amazon', 0.18662355840206146), ('free', 0.1782003790140152)]
+
+b'Apple is shutting down iTunes'
+[('deal', 0.3259156346321106), ('shipped', 0.2818053066730499), ('amazon', 0.2791897654533386)]
+
+b'Heres how to stand out in a crowded streaming service market'
+[('shipped', 0.40506988763809204), ('deal', 0.404723197221756), ('amazon', 0.37091338634490967)]
+
+b'From Rihanna to Fall Out Boy, Hear How Apples Garageband Changed Music Forever'
+[('deal', 0.23730385303497314), ('shipped', 0.16928477585315704), ('facebook', 0.16890469193458557)]
+
+b'All the new features Apple is expected to bring to your Mac computer later this year'
+[('shipped', 0.4069560170173645), ('deal', 0.4051206707954407), ('amazon', 0.31905844807624817)]
+
+b'[Tvt News]Daily Crunch: Leap Motion waves goodbye - Tvt News'
+[('google', 0.19102977216243744), ('cashback', 0.18369179964065552), ('deal', 0.17459610104560852)]
+
+b'To prepare for superfast 5G, Apple bumps iOS App Store download limit to a ridiculous 200 MB'
+[('deal', 0.42480960488319397), ('shipped', 0.32719817757606506), ('google', 0.31532201170921326)]
+
+b'Do Hedge Funds Have Too Much Confidence In Amazon.com, Inc. (AMZN)?'
+[('cashback', 0.25455981492996216), ('unlimited', 0.23168498277664185), ('facebook', 0.2260551005601883)]
+
+b'To prepare for superfast 5G, Apple bumps iOS App Store download limit to a ridiculous 200 MB'
+[('deal', 0.42480960488319397), ('shipped', 0.32719817757606506), ('google', 0.31532201170921326)]
+
+b'Apple Poised To Bring Mac and iPad Closer Than Ever'
+[('deal', 0.23056524991989136), ('facebook', 0.211456298828125), ('shipped', 0.16946366429328918)]
+
+b'You can now download files up to 200MB over the air on your iPhone'
+[('shipped', 0.41106340289115906), ('deal', 0.38195353746414185), ('google', 0.3465125858783722)]
+
+b'What to Expect at WWDC: iOS 13, macOS 10.15, watchOS 6 and tvOS 13'
+[('deal', 0.29343080520629883), ('shipped', 0.28069421648979187), ('facebook', 0.1991153508424759)]
+
+b"Apple will reportedly limit third-party tracking in children's apps"
+[('facebook', 0.41014572978019714), ('deal', 0.3748509883880615), ('shipped', 0.3578716516494751)]
+
+b'Apple is finally ditching iTunes.'
+[('shipped', 0.3005644977092743), ('deal', 0.2913307547569275), ('amazon', 0.24951814115047455)]
+
+b'Save 53% on this 3-in-1 charging stand for the ultimate Apple fan'
+[('shipped', 0.46153008937835693), ('deal', 0.41645199060440063), ('amazon', 0.29609620571136475)]
+
+b'Everything Coming to iTunes & the Apple TV App in June 2019'
+[('deal', 0.3203141391277313), ('shipped', 0.2877800762653351), ('google', 0.2808716297149658)]
+
+b'Its a Tide Ad by Procter & Gamble & Saatchi & Saatchi New York wins Grand Effie at the 2019 Effie Awards U.S.'
+[('facebook', 0.30597880482673645), ('deal', 0.2862658202648163), ('cashback', 0.24909941852092743)]
+
+b'Apples 150 MB App Download Cap Raised To 200 MB, Still Dumb'
+[('deal', 0.27013900876045227), ('balance', 0.18914984166622162), ('facebook', 0.1747230440378189)]
+
+b'Save more than 60% on this charging dock for your iPhone, Apple Watch, and AirPods'
+[('shipped', 0.46155494451522827), ('deal', 0.415170282125473), ('amazon', 0.34690210223197937)]
+
+b'Samsung Galaxy Note 10 might skip headphone jack'
+[('unlimited', 0.3349660634994507), ('balance', 0.2547481060028076), ('google', 0.20029816031455994)]
+
+b'iMore show 659: MacOS Double Entendre'
+[('deal', 0.2269107699394226), ('shipped', 0.17794211208820343), ('facebook', 0.12777461111545563)]
+
+b'How to add AppleCare to your Mac after purchase'
+[('unlimited', 0.5284018516540527), ('shipped', 0.3467113971710205), ('amazon', 0.30051612854003906)]
+
+b'Senior Test Engineer - Opto-Electronics'
+[('free', 0.14963623881340027), ('google', 0.14005526900291443), ('shipped', 0.032631609588861465)]
+
+b'Qualcomm Price Target Cut During Worst Month in Years'
+[('shipped', 0.2593979835510254), ('deal', 0.25627073645591736), ('amazon', 0.2070031762123108)]
+
+b'We used our iPhone to ride the New York City subway today  its the future'
+[('amazon', 0.3427397310733795), ('deal', 0.32594576478004456), ('shipped', 0.29731646180152893)]
+
+b' - 2019/06/01() 06:05 - '
+0b'Best Free Games for iPod Touch'
+[('deal', 0.3483414649963379), ('shipped', 0.28790777921676636), ('facebook', 0.21900498867034912)]
+
+b'Nyra app launched to help women manage feminine health'
+[('facebook', 0.39866405725479126), ('deal', 0.3016532361507416), ('shipped', 0.22441847622394562)]
+
+b'Apple to limit third-party tracking in kids apps, report says'
+[('amazon', 0.40727245807647705), ('shipped', 0.2884584963321686), ('unlimited', 0.2870154082775116)]
+
+b'Eli Apple on not having 2020 option picked up: Have to go out and prove myself'
+[('balance', 0.3276747763156891), ('unlimited', 0.31288814544677734), ('facebook', 0.3013059198856354)]
+
+b'Bumpy car rides suck and a newly published patent reveals Ap'
+[('google', 0.3352787494659424), ('unlimited', 0.296297550201416), ('cashback', 0.23440472781658173)]
+
+b'Rest in Peace, iTunes'
+[('shipped', 0.2531985342502594), ('deal', 0.23389051854610443), ('google', 0.16381122171878815)]
+
+b'Xiaomi and Redmi are looking to dominate in 2019'
+[('deal', 0.2736169099807739), ('shipped', 0.27174752950668335), ('facebook', 0.24556781351566315)]
+
+b'This week in Apple: The top news from Androids main competitor'
+[('shipped', 0.3357090651988983), ('deal', 0.31867316365242004), ('amazon', 0.2799440026283264)]
+
+b'Buying donepezil online legal traffic, cheap donepezil fast'
+[('unlimited', 0.46999719738960266), ('facebook', 0.42376887798309326), ('shipped', 0.3009483814239502)]
+
+b'Xiaomi and Redmi are looking to dominate in 2019'
+[('deal', 0.2736169099807739), ('shipped', 0.27174752950668335), ('facebook', 0.24556781351566315)]
+
+b'Expect a fond farewell from iTunes at WWDC'
+[('deal', 0.38672009110450745), ('shipped', 0.3152461647987366), ('google', 0.22780060768127441)]
+
+b'This week in Apple: The top news from Androids main competitor'
+[('shipped', 0.3357090651988983), ('deal', 0.31867316365242004), ('amazon', 0.2799440026283264)]
+
+b'Apple Poised To Bring Mac and iPad Closer Than Ever'
+[('deal', 0.23056524991989136), ('facebook', 0.211456298828125), ('shipped', 0.16946366429328918)]
+
+b'Motorola says no Z4 Force this year as flagship ambitions wither'
+[('facebook', 0.32431989908218384), ('unlimited', 0.30829545855522156), ('cashback', 0.24684768915176392)]
+
+b'How to customize your iPhone display'
+[('google', 0.38384178280830383), ('unlimited', 0.362750768661499), ('shipped', 0.28905537724494934)]
+
+b'Synchrony Financial CEO Taking Wait And See Approach With Apple Card'
+[('deal', 0.3294942378997803), ('facebook', 0.24855221807956696), ('cashback', 0.2403838336467743)]
+
+b'J.K. Rowling is releasing four new Harry Potter books online'
+[('deal', 0.3262529671192169), ('shipped', 0.3187054991722107), ('google', 0.30724936723709106)]
+
+b'New York Genuine Estate The Empire State 16221'
+[('deal', 0.23076754808425903), ('facebook', 0.16010607779026031), ('shipped', 0.14954334497451782)]
+
+b'" Have you already purchased a Mac but now decided that youd like to protect it with AppleCare? Keep..."'
+[('unlimited', 0.3827472925186157), ('facebook', 0.3391450047492981), ('balance', 0.33742573857307434)]
+
+b'" Earlier this week the iPod touch received a modest upgrade, arriving with little fanfare via an..."'
+[('deal', 0.3838450014591217), ('cashback', 0.34306952357292175), ('amazon', 0.25888878107070923)]
+
+b'"Neben dem Ausbau des spiegellosen Vollformats macht Panasonic deutlich, dass das..."'
+[('unlimited', 0.11125999689102173), ('facebook', 0.07466340810060501), ('shipped', 0.028917627409100533)]
+
+b'" Apples Worldwide Developers Conference is slated to kick-off on Monday, and its shaping up to be..."'
+[('deal', 0.28444725275039673), ('facebook', 0.26688429713249207), ('shipped', 0.25768184661865234)]
+
+b'" Whether youre heading to WWDC and other coinciding conferences in San Jose this year for the first..."'
+[('deal', 0.35183441638946533), ('cashback', 0.2870067059993744), ('amazon', 0.2656611502170563)]
+
+b'Fandango Apple Pay Promotion: Get $5 Off Two Rocketman Tickets w/ Promo Code ROCKETMAN'
+[('deal', 0.41984423995018005), ('shipped', 0.33490484952926636), ('facebook', 0.2457224726676941)]
+
+b'Apple, FBI and encryption  four issues enterprises should care about - Diginomica'
+[('amazon', 0.3969945013523102), ('free', 0.3067249059677124), ('balance', 0.28777292370796204)]
+
+b'Google quietly ruined Chrome, and we almost missed it'
+[('google', 0.3399677276611328), ('shipped', 0.334485799074173), ('deal', 0.27998778223991394)]
+
+b'6 paid iPhone apps on sale for free on May 31st'
+[('deal', 0.4640975296497345), ('shipped', 0.4466519355773926), ('facebook', 0.34860074520111084)]
+
+b'You can now download files up to 200MB over the air on your iPhone'
+[('shipped', 0.41106340289115906), ('deal', 0.38195353746414185), ('google', 0.3465125858783722)]
+
+b'New leak shows off Apples iPhone 11R design changes'
+[('deal', 0.3990381956100464), ('google', 0.39613428711891174), ('shipped', 0.24988709390163422)]
+
+b'Apple is finally going to put iTunes out of its misery'
+[('shipped', 0.35332825779914856), ('deal', 0.3425888121128082), ('amazon', 0.2932332456111908)]
+
+b'Todays best deals: $8 wireless charger, $12 smart LED bulbs, $17 Wi-Fi extender, 36 BIC pens for $6.55, more'
+[('unlimited', 0.3207055628299713), ('balance', 0.3135031759738922), ('google', 0.27843397855758667)]
+
+b'Apple Plans End of iTunes, to Reveal Glimpses of Its Next Era of Apps and Devices'
+[('google', 0.28049421310424805), ('deal', 0.2655722498893738), ('shipped', 0.13219109177589417)]
+
+b'Apple will reportedly limit third-party tracking in childrens apps'
+[('google', 0.3972579836845398), ('deal', 0.3488101661205292), ('shipped', 0.3379749059677124)]
+
+b'New iPod Touch Delivers Even Greater Performance'
+[('deal', 0.2969975173473358), ('facebook', 0.20342054963111877), ('balance', 0.15466345846652985)]
+
+b'MacOS Double Entendre'
+[('unlimited', 0.2039753943681717), ('shipped', 0.13049311935901642), ('facebook', 0.1002112329006195)]
+
+b'The surprising main reason 492 out of 500 people at one company chose iPhone over Android'
+[('amazon', 0.36710289120674133), ('deal', 0.3511508107185364), ('shipped', 0.29640260338783264)]
+
+b'Epicentre acting CEO not contactable; trading paused,'
+[('amazon', 0.3349456787109375), ('unlimited', 0.3221397399902344), ('cashback', 0.19965367019176483)]
+
+b'iOS apps reportedly sharing massive amounts of data with tracking companies when you sleep'
+[('google', 0.4849294126033783), ('unlimited', 0.347461074590683), ('cashback', 0.32424718141555786)]
+
+b'Its the middle of the night. Do you know who your iPhone is talking to?'
+[('facebook', 0.3554903268814087), ('shipped', 0.3331258296966553), ('deal', 0.27646589279174805)]
+
+b'The Gross Law Firm Announces Class Actions on Behalf of Shareholders of AAPL, FLEX and SCOR'
+[('deal', 0.195126473903656), ('cashback', 0.1666249781847), ('facebook', 0.15691103041172028)]
+
+b'What can you expect from WWDC 2019?'
+[('deal', 0.32481250166893005), ('shipped', 0.30598241090774536), ('google', 0.2678647041320801)]
+
+b'Apple Plans End of iTunes, Launching Next Era of Apps and Devices'
+[('deal', 0.26831021904945374), ('google', 0.26500385999679565), ('shipped', 0.14344584941864014)]
+
+b'Tech Drops as China Prepares Response to U.S. Huawei Moves -- Tech Roundup'
+[('deal', 0.2373286932706833), ('facebook', 0.193248450756073), ('cashback', 0.1714460253715515)]
+
+b'WWDC 2019: Meet the London students going out to Apple&apos;s annual developer event'
+[('deal', 0.3423053026199341), ('google', 0.31953176856040955), ('shipped', 0.2773601710796356)]
+
+b'Apple Announces the End of iTunes'
+[('deal', 0.2985415756702423), ('google', 0.18375420570373535), ('shipped', 0.16158369183540344)]
+
+b'All the new features Apple is expected to bring to your Mac computer later this year,'
+[('deal', 0.40548399090766907), ('shipped', 0.4048612415790558), ('google', 0.3211545944213867)]
+
+b'Apple Is Planning On Ditching iTunes In Favor Of New Apps: Report'
+[('deal', 0.2802751362323761), ('facebook', 0.25454649329185486), ('balance', 0.16645774245262146)]
+
+b'Industrials Fall After Mexico Tariff Measures -- Industrials Roundup'
+[('cashback', 0.19528762996196747), ('amazon', 0.18662355840206146), ('free', 0.1782003790140152)]
+
