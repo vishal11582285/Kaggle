@@ -1,16 +1,8 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 ## Task:
 
 # Look at https://github.com/sundeepblue/movie_rating_prediction and download data file movie_metadata.csv.
 
 # Then
-
- 
 
 #     Get additional data from other sources if required.
 #     Perform Data Preprocessing and Exploratory Data Analysis which includes data visualization also.
@@ -18,7 +10,7 @@
 #     Compare the results and suggest the model which could be useful to deploy into production.
 #     Optional: you can also use TensorFlow, Keras or Pytorch to build the models.  
 
- 
+
 
 # Send your work (code and results and process documentation) as Python notebook output (.html or .ipynb files).
 
@@ -27,7 +19,7 @@
 
 
 import warnings
-import requests 
+import requests
 import json
 from dask import delayed, compute
 import dask
@@ -102,7 +94,7 @@ imdb_db.head()
 # In[5]:
 
 
-#Lets check if the data types are in order 
+#Lets check if the data types are in order
 print(imdb_db.dtypes)
 # imdb_db.columns
 
@@ -123,7 +115,7 @@ imdb_db.reset_index()
 imdb_db.info()
 #MIssing values (Percentage wise):
 
-# Missing values per column (Percentage): 
+# Missing values per column (Percentage):
 # color                         0.376760
 # director_name                 2.062265
 # num_critic_for_reviews        0.991473
@@ -164,7 +156,7 @@ imdb_db.title_year = imdb_db.title_year.astype(np.int)
 # In[9]:
 
 
-# The most number of missing values are in gross column: about ~ 17 percent, which we cannot straight away drop, 
+# The most number of missing values are in gross column: about ~ 17 percent, which we cannot straight away drop,
 # as we risk losing lot of data. Gross is a float object. Let us see how it fares.
 
 imdb_db.gross.agg([np.mean, np.median, np.min, np.max])
@@ -216,7 +208,7 @@ print('Missing values per column (Percentage): \n', (imdb_db.isna().sum()/imdb_d
 #For budget, lets impute the missing values with the median
 imdb_db.budget = imdb_db.budget.fillna(imdb_db.budget.median())
 
-#For aspect_ratio, lets impute the missing values with the mode, as value_counts show 
+#For aspect_ratio, lets impute the missing values with the mode, as value_counts show
 #the distribution is maximum for mode value = 2.35
 
 imdb_db.aspect_ratio = imdb_db.aspect_ratio.fillna(imdb_db.aspect_ratio.mode())
@@ -445,7 +437,7 @@ imdb_db.class_rating.value_counts()
 
 import researchpy as rp
 from scipy import stats
-table, results, expected = rp.crosstab(imdb_db['color'], imdb_db['class_rating'], test= 'chi-square', expected_freqs=True)  
+table, results, expected = rp.crosstab(imdb_db['color'], imdb_db['class_rating'], test= 'chi-square', expected_freqs=True)
 table , results
 #Just to verify with Chi-square test of independance if the categorical values 'color' and 'black and white' are independance.
 #p-value of <=0.05 indicates, there is indeed independance. So we keep the attribute 'color' and move ahead
@@ -489,7 +481,7 @@ imdb_db.aspect_ratio.value_counts()
 # Eventually cinema converged on two leading standards: a normal 1.85:1 widescreen and an anamorphic 2.39:1 widescreen. With television, the formats became 4:3 with standard definition and later 16:9 with high definition, which at 1.78:1 
 # was a close match to 1.85:1 widescreen cinema. 
 
-#Based on this anything which is not 2.35 or 1.85, can be termed as rare, 
+#Based on this anything which is not 2.35 or 1.85, can be termed as rare,
 #and then we can enforce one-hot encoding convertion on aspect_ratio
 
 imdb_db.aspect_ratio = imdb_db.aspect_ratio.apply(lambda x: 'rare' if not x in [2.35,1.85] else x)
@@ -635,7 +627,7 @@ imdb_db.color = imdb_db.color.replace(color_)
 
 
 #By the below plot, we see that it makes sense to split the title_year into chunks of 10 years from 1927 to 2016
-imdb_db['YearBin'] = pd.cut(imdb_db.title_year,bins=9) 
+imdb_db['YearBin'] = pd.cut(imdb_db.title_year,bins=9)
 year_approx = imdb_db.groupby('YearBin')['make_profit'].sum()
 year_approx.plot(kind='bar')
 
@@ -712,25 +704,25 @@ MLA = [
     ensemble.GradientBoostingClassifier(),
     ensemble.RandomForestClassifier(),
 
-    
+
     #GLM
     linear_model.LogisticRegressionCV(),
-    
+
     #Navies Bayes
     naive_bayes.GaussianNB(),
-    
+
     #Nearest Neighbor
     neighbors.KNeighborsClassifier(),
-    
+
     #SVM
     svm.SVC(probability=True),
     svm.LinearSVC(),
-    
-    #Trees    
+
+    #Trees
     tree.DecisionTreeClassifier(),
-    
+
     #xgboost: http://xgboost.readthedocs.io/en/latest/model.html
-    XGBClassifier()    
+    XGBClassifier()
     ]
 
 
@@ -744,7 +736,7 @@ MLA_compare = pd.DataFrame(columns = MLA_columns)
 #create table to compare MLA predictions
 MLA_predict = pd.DataFrame()
 
-cv_split = model_selection.ShuffleSplit(n_splits = 5, test_size = .3, train_size = .7, random_state = 0 ) 
+cv_split = model_selection.ShuffleSplit(n_splits = 5, test_size = .3, train_size = .7, random_state = 0 )
 # run model 10x with 60/30 split intentionally leaving out 10%
 
 #index through MLA and save performance to table
@@ -755,13 +747,13 @@ for alg in MLA:
     MLA_name = alg.__class__.__name__
     MLA_compare.loc[row_index, 'MLA Name'] = MLA_name
     MLA_compare.loc[row_index, 'MLA Parameters'] = str(alg.get_params())
-    
+
     #score model with cross validation: http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate
     cv_results = model_selection.cross_validate(alg, X_train, y_train, cv  = cv_split, return_train_score=True, scoring='accuracy')
 #     print(cv_results)
     MLA_compare.loc[row_index, 'MLA Time'] = cv_results['fit_time'].mean()
     MLA_compare.loc[row_index, 'MLA Train Accuracy Mean'] = cv_results['train_score'].mean()
-    MLA_compare.loc[row_index, 'MLA Test Accuracy Mean'] = cv_results['test_score'].mean()   
+    MLA_compare.loc[row_index, 'MLA Test Accuracy Mean'] = cv_results['test_score'].mean()
     #if this is a non-bias random sample, then +/-3 standard deviations (std) from the mean, should statistically capture 99.7% of the subsets
     MLA_compare.loc[row_index, 'MLA Test Accuracy 3*STD'] = cv_results['test_score'].std()*3   #let's know the worst that can happen!
 
@@ -769,7 +761,7 @@ for alg in MLA:
     alg.fit(X_train, y_train)
     row_index+=1
     MLA_predict[MLA_name] = alg.predict(X_test)
-    
+
 #print and sort table: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html
 MLA_compare.sort_values(by = ['MLA Test Accuracy Mean'], ascending = False, inplace = True)
 MLA_compare
@@ -821,14 +813,14 @@ grid_param = {
 
 start_total = time.perf_counter() #https://docs.python.org/3/library/time.html#time.perf_counter
 
-start = time.perf_counter()        
+start = time.perf_counter()
 best_search = model_selection.GridSearchCV(estimator = model_rf, param_grid = grid_param, cv = cv_split, scoring = 'accuracy')
 best_search.fit(X_train, y_train)
 run = time.perf_counter() - start
 
 best_param = best_search.best_params_
 print('The best parameter for {} is {} with a runtime of {:.2f} seconds.'.format(model_rf.__class__.__name__, best_param, run))
-model_rf.set_params(**best_param) 
+model_rf.set_params(**best_param)
 
 
 run_total = time.perf_counter() - start_total
@@ -860,7 +852,7 @@ from sklearn.feature_selection import RFE
 #rank all features, i.e continue the elimination until the last one
 rfe = RFE(model_rf, n_features_to_select=1)
 rfe.fit(X_train,y_train)
- 
+
 print("Features sorted by their rank:")
 feat_imp = sorted(zip(map(lambda x: round(x, 4), rfe.ranking_), X_train.columns))
 print(feat_imp)
@@ -869,7 +861,7 @@ print(feat_imp)
 # In[68]:
 
 
-#Through Recursive feature elimination, we can judge which features actually contribute to making 
+#Through Recursive feature elimination, we can judge which features actually contribute to making
 #better predictions, and also reduce the dimensionallity of our dataset if lesser number of features
 #give a considerate amoount of accuracy.
 for how_many in [5,10,15,20,25,30,40,50]:
@@ -887,7 +879,7 @@ for how_many in [5,10,15,20,25,30,40,50]:
 # In[69]:
 
 
-#We observe that just selecting 20 features for our RandomForest Model is enough to provide good accuracy on 
+#We observe that just selecting 20 features for our RandomForest Model is enough to provide good accuracy on
 #cross validated scores. We keep only 20 features.
 best_features = [y for x,y in feat_imp[:20]]
 np.array(best_features)
@@ -916,25 +908,25 @@ MLA = [
     ensemble.GradientBoostingClassifier(),
     ensemble.RandomForestClassifier(),
 
-    
+
     #GLM
     linear_model.LogisticRegressionCV(),
-    
+
     #Navies Bayes
     naive_bayes.GaussianNB(),
-    
+
     #Nearest Neighbor
     neighbors.KNeighborsClassifier(),
-    
+
     #SVM
     svm.SVC(probability=True),
     svm.LinearSVC(),
-    
-    #Trees    
+
+    #Trees
     tree.DecisionTreeClassifier(),
-    
+
     #xgboost: http://xgboost.readthedocs.io/en/latest/model.html
-    XGBClassifier()    
+    XGBClassifier()
     ]
 
 
@@ -948,7 +940,7 @@ MLA_compare = pd.DataFrame(columns = MLA_columns)
 #create table to compare MLA predictions
 MLA_predict = pd.DataFrame()
 
-cv_split = model_selection.ShuffleSplit(n_splits = 5, test_size = .3, train_size = .7, random_state = 0 ) 
+cv_split = model_selection.ShuffleSplit(n_splits = 5, test_size = .3, train_size = .7, random_state = 0 )
 # run model 10x with 60/30 split intentionally leaving out 10%
 
 #index through MLA and save performance to table
@@ -959,13 +951,13 @@ for alg in MLA:
     MLA_name = alg.__class__.__name__
     MLA_compare.loc[row_index, 'MLA Name'] = MLA_name
     MLA_compare.loc[row_index, 'MLA Parameters'] = str(alg.get_params())
-    
+
     #score model with cross validation: http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate
     cv_results = model_selection.cross_validate(alg, X_train, y_train, cv  = cv_split, return_train_score=True, scoring='accuracy')
 #     print(cv_results)
     MLA_compare.loc[row_index, 'MLA Time'] = cv_results['fit_time'].mean()
     MLA_compare.loc[row_index, 'MLA Train Accuracy Mean'] = cv_results['train_score'].mean()
-    MLA_compare.loc[row_index, 'MLA Test Accuracy Mean'] = cv_results['test_score'].mean()   
+    MLA_compare.loc[row_index, 'MLA Test Accuracy Mean'] = cv_results['test_score'].mean()
     #if this is a non-bias random sample, then +/-3 standard deviations (std) from the mean, should statistically capture 99.7% of the subsets
     MLA_compare.loc[row_index, 'MLA Test Accuracy 3*STD'] = cv_results['test_score'].std()*3   #let's know the worst that can happen!
 
@@ -973,7 +965,7 @@ for alg in MLA:
     alg.fit(X_train, y_train)
     row_index+=1
     MLA_predict[MLA_name] = alg.predict(X_test)
-    
+
 #print and sort table: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html
 MLA_compare.sort_values(by = ['MLA Test Accuracy Mean'], ascending = False, inplace = True)
 MLA_compare
@@ -1012,14 +1004,14 @@ grid_param = {
 
 start_total = time.perf_counter() #https://docs.python.org/3/library/time.html#time.perf_counter
 
-start = time.perf_counter()        
+start = time.perf_counter()
 best_search = model_selection.GridSearchCV(estimator = model_rf, param_grid = grid_param, cv = cv_split, scoring = 'accuracy')
 best_search.fit(X_train, y_train)
 run = time.perf_counter() - start
 
 best_param = best_search.best_params_
 print('The best parameter for {} is {} with a runtime of {:.2f} seconds.'.format(model_rf.__class__.__name__, best_param, run))
-model_rf.set_params(**best_param) 
+model_rf.set_params(**best_param)
 
 
 run_total = time.perf_counter() - start_total
